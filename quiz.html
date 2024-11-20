@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz sobre 5Rs da Sustentabilidade</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz sobre 5Rs da Sustentabilidade e TI Verde</h1>
+        <div id="quiz"></div>
+        <button id="submit">Enviar Respostas</button>
+        <div id="result"></div>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Botão inicial que revela o outro -->
+    <button id="btnReveal" class="btn">Aperte aqui após concluir o quiz!</button>
+
+    <!-- Botão invisível inicialmente -->
+    <a href="../Tela de finalização/end.html" id="btnRedirect" class="btn" style="display: none;">Prosseguir</a>
+
+    <script>
+        // Revela o botão invisível ao clicar no botão inicial
+        document.getElementById('btnReveal').addEventListener('click', function() {
+            document.getElementById('btnRedirect').style.display = 'inline-block';
+        });
+    </script>
+
+</body>
+</html>
